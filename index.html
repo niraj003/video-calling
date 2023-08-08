@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Calling Web App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	
+</head>
+<body>
+	<!-- <div> <a href="whatsapp://send?text=This is WhatsApp sharing example using link"       data-action="share/whatsapp/share"  
+        target="_blank"> Share to WhatsApp </a>   </div> -->
+	<!-- <div class="header">
+		<h1>Video Calling Web App</h1>
+	</div> -->
+
+	<!-- copy -->
+	<div class=" flex justify-center items-center">
+	<div
+    class="flex items-center justify-between w-full text-gray-800 border border-gray-800 bg-white max-w-sm font-mono text-sm py-3 px-4 rounded-md">
+    <div class="flex gap-1" id ="url">
+       
+    </div>
+    <span class="flex text-gray-800 cursor-pointer w-10 h-10 hover:text-gray-400 duration-200">
+    <img class="m-1" src="copy.svg" onclick="myFun()" alt="">
+	
+	<img src="icons8-whatsapp.gif" onclick="whatsapp()" alt=""></a>
+</span>
+</div>
+</div>
+<!--  -->
+
+
+	<div  id="root">
+		 <video class="from" id="localVideo" autoplay muted></video> 
+		<video class="to" id="remoteVideo" autoplay controls></video>  
+	</div>
+
+	<footer class="bg-green-200 bg-opacity-75 text-slate-900 fixed bottom-1 rounded-lg shadow m-4">
+		<div class="w-full flex justify-center mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+			<span class="text-sm text-slate-900 sm:text-center ">Made With ❤️ <a
+					href="https://niraj-ghetiya.vercel.app/" class="hover:underline">Niraj Ghetiya™</a>.
+			</span>
+	
+		</div>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+	<script src="root.js"></script>
+</body>
+</html>
