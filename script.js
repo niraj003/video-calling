@@ -5,7 +5,7 @@ if (!location.hash) {
 const roomHash = location.hash.substring(1);
   
 // TODO: Replace with your own channel ID
-var url =`https://video-calling-smoky.vercel.app//#${roomHash}`;
+var url =`https://video-calling-smoky.vercel.app/#${roomHash}`;
 document.getElementById("url").innerHTML = ` <span>Url: </span>
 <span id="myInput">${url}</span>`;
 const drone = new ScaleDrone('W7QmZeNjHpNTNFUb');
@@ -13,7 +13,7 @@ const drone = new ScaleDrone('W7QmZeNjHpNTNFUb');
 // whatsapp shear
 function whatsapp() {
   window.open
-(`whatsapp://send?text="${url}"`)
+(`whatsapp://send?text=${url}`)
 }
 
 
