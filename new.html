@@ -77,8 +77,11 @@
         // document.getElementById("code").value = Math.floor(Math.random() * 0xFFFFFF).toString(16);
         function newm(){
             var code = document.getElementById("code").value;
+            if(code == ""){
+                alert("Generate Meetimg Code");
+            }else{ 
             var url = `video-calling-smoky.vercel.app/join.html?id=${code}`;
-            window.open( `whatsapp://send?text=Join Meeting using Link:${url}`);
+            window.open( `whatsapp://send?text=Join Meeting using Link:${url}`);}
 
         }
 
