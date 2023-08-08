@@ -32,11 +32,10 @@
             </div>
             <div class="flex flex-col items-center w-full mb-4 md:flex-row md:px-16">
               <input
-                placeholder="Meetimg Code"
+                placeholder="Generate Meetimg Code"
                 required="Meeting Code"
                 type="text"
                 id="code"
-                disabled
                 class="flex-grow w-full  h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
               />
               <div
@@ -75,7 +74,7 @@
 	</footer>
       </section>
       <script>
-        document.getElementById("code").value = Math.floor(Math.random() * 0xFFFFFF).toString(16);
+        // document.getElementById("code").value = Math.floor(Math.random() * 0xFFFFFF).toString(16);
         function newm(){
             var code = document.getElementById("code").value;
             var url = `video-calling-smoky.vercel.app/join.html?id=${code}`;
