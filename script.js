@@ -13,7 +13,7 @@ const drone = new ScaleDrone('W7QmZeNjHpNTNFUb');
 // whatsapp shear
 function whatsapp() {
   window.open
-(`whatsapp://send?text=${url}`)
+(`whatsapp://send?text="${url}"`)
 }
 
 
