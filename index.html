@@ -19,7 +19,7 @@
 	<div class=" flex justify-center items-center">
 	<div
     class="flex items-center justify-between w-full text-gray-800 border border-gray-800 bg-white max-w-sm font-mono text-sm py-3 px-4 rounded-md">
-    <div class="flex gap-1" id ="url">
+    <div class="flex" id ="url">
        
     </div>
     <span class="flex text-gray-800 cursor-pointer w-10 h-10 hover:text-gray-400 duration-200">
@@ -31,11 +31,11 @@
 </div>
 <!--  -->
 
-<div class=" flex justify-center items-center">
+<div class=" flex-col justify-center items-center">
 	
-		 <video class=" w-[400px] 
-		 h-[400px]" id="remoteVideo" autoplay muted></video> 
-		<video class="h-[400px] w-[400px] m-0.5 " id="localVideo" autoplay controls></video>  
+		 <video class=" w-full 
+		 h-screen" id="remoteVideo" autoplay muted></video> 
+		<video class="h-[400px] w-[400px] fixed bottom-1 right-1 m-0.5 " id="localVideo" autoplay controls></video>  
 	</div></div>
 
 	<footer class="bg-green-200 bg-opacity-75 text-slate-900 fixed bottom-1 rounded-lg shadow m-4">
